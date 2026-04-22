@@ -4,7 +4,7 @@ PI-DeepONet experiments based on Lorig, M. (2024), *Structural Default with a Ra
 
 ## Setup
 
-A firm value $X_t$ defaults at $\tau = \inf(t \geq 0 : X_t = Z)$, where $Z \perp X$ is a random barrier. The key quantity is
+A firm value $X_t$ defaults at $\tau = \inf\{t \geq 0 : X_t = Z\}$, where $Z \perp X$ is a random barrier. The key quantity is
 
 $$u(x, \bar{x}) = E\left[e^{-\int_0^\tau \gamma(X_s) ds} \varphi(\tau, X_\tau) \mid X_0 = x,\ Z > \bar{x}\right].$$
 

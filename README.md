@@ -14,8 +14,3 @@ Since $Z \perp X$, conditioning on $Z = z$ reduces the problem to a fixed-barrie
 
 - `notebooks/lorig_deeponet.ipynb` — BM-with-drift example (Lorig §2): trains PI-DeepONet on the survival PDE, compares to the analytical solution, computes the credit spread $Y = -\frac{1}{t}\log u$.
 
-## Install
-
-```
-pip install -r requirements.txt
-```

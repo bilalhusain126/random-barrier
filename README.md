@@ -6,7 +6,7 @@ PI-DeepONet experiments based on Lorig, M. (2024), *Structural Default with a Ra
 
 A firm value $X_t$ defaults at $\tau = \inf\{t : X_t = Z\}$, where $Z \perp X$ is a random barrier. The key quantity is
 
-$$u(x, \bar{x}) = E\!\left(e^{-\int_0^\tau \gamma(X_s)\,ds}\,\varphi(\tau, X_\tau) \mid X_0 = x,\; Z > \bar{x}\right).$$
+$$u(x, \bar{x}) = E\left[e^{-\int_0^\tau \gamma(X_s) ds} \varphi(\tau, X_\tau) \mid X_0 = x,\ Z > \bar{x}\right].$$
 
 Since $Z \perp X$, conditioning on $Z = z$ reduces the problem to a fixed-barrier PDE for $w(x, t, z)$. A PI-DeepONet learns the operator $z \mapsto w(\cdot,\cdot;\,z)$, and $u$ follows by integrating $w$ against $F_{Z \mid Z > \bar{x}}$.
 
